@@ -1,0 +1,17 @@
+User presses go and a random number 1-6 is shown.
+
+I'll use random to generate the number.
+think I'll try CustomTKinter for a change for UI once logic works.
+
+expansion:
+loop to reroll or quit
+multi dice mode? 
+user configurable sided dice (i.e I want to roll a 19 sided dice pls).
+short animation of dice rolling would be good:
+    either loading a video or maybe making a 3d model with the correct number of sides on the fly?
+    might be too slow not sure.
+
+Basic workflow:
+
+user sets number of sides > user sets number of dice > random number(s) generated > display
+
