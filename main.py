@@ -7,7 +7,7 @@ def validate_number(number, range_end):
         print(f"Invalid input, enter a number 1 - {range_end}")
     else:
         if 0 <  num <= range_end:
-            return True 
+            return num
         else:
            print(f"Invalid input, enter a number 1 - {range_end}") 
 
@@ -16,14 +16,14 @@ def choose_num_dice():
     while not num_dice_valid:
         num = input("how many dice would you like to roll? ")
         num_dice_valid = validate_number(num, 5)
-    return int(num)
+    return num_dice_valid
 
 def choose_num_sides():
     sides_valid = False
     while not sides_valid:
         sides = input("how many sides would you like the dice to have? ")
         sides_valid = validate_number(sides, 20)
-    return int(sides)
+    return sides_valid
 
 def roll_dice(num, sides):
     dice_list = [random.randint(1, sides) for dice in range(num)]
